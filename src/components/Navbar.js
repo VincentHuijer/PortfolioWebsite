@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="bg-[#E2E2E2] p-3">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <div className="text-black text-sm font-serif">Vincent Huijer</div>
+          <a href="/" className="text-black text-sm font-serif">Vincent Huijer</a>
           <div className="flex space-x-4">
             <a href="/" className="text-black text-sm font-serif">Home</a>
             <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
