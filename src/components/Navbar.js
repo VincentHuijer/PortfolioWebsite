@@ -1,24 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Homepaaaaaaaaaage</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/skills">Skills</Link>
-        </li>
-        <li>
-          <Link to="/todo">Todo</Link>
-        </li>
-      </ul>
+    <nav className="bg-[#E2E2E2] p-3">
+      <div className="container mx-auto">
+        <div className="flex items-center justify-between">
+          <div className="text-black text-sm font-serif">Vincent Huijer</div>
+          <div className="flex space-x-4">
+            <a href="/" className="text-black text-sm font-serif">Home</a>
+            <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
+            <a href="/skills" className="text-black text-sm font-serif">Ervaringen</a>
+            <a href="/contact" className="text-black text-sm font-serif">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
