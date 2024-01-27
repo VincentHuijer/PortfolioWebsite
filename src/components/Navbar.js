@@ -1,6 +1,11 @@
-import React from 'react';
+import ContactModal from '../components/ContactModal';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [isContactModalOpen, setContactModalOpen] = useState(false);
+  const openContactModal = () => setContactModalOpen(true);
+  const closeContactModal = () => setContactModalOpen(false);
+
   return (
     <nav className="bg-[#E2E2E2] p-3">
       <div className="container mx-auto">
@@ -9,8 +14,13 @@ const Navbar = () => {
           <div className="flex space-x-4">
             <a href="/" className="text-black text-sm font-serif">Home</a>
             <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
+            <a href="/projects" className="text-black text-sm font-serif">Projects</a>
             <a href="/skills" className="text-black text-sm font-serif">Ervaringen</a>
-            <a href="/contact" className="text-black text-sm font-serif">Contact</a>
+            <button className='text-black text-sm font-serif' onClick={openContactModal}>Contact</button>
+            <ContactModal
+              isOpen={isContactModalOpen}
+              onRequestClose={closeContactModal}
+            />          
           </div>
         </div>
       </div>

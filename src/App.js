@@ -7,6 +7,9 @@ import Skills from './views/Skills';
 import Todo from './views/Todo';
 import Profiel from './views/Profiel';
 import './index.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 function App() {
   return (

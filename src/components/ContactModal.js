@@ -31,6 +31,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
     borderRadius: '8px',
     width: '30%',
     height: '30%',
+    
     // maxWidth: '400px',
     // maxHeight: '300px',
   };
@@ -49,7 +50,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
         <form onSubmit={handleSubmit}>
           <div>
             <input
-              className='border border-black mb-2'
+              className='border border-black mb-2 outline-none'
               type="text"
               name="name"
               placeholder='Naam'
@@ -59,7 +60,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
           </div>
           <div>
             <input
-              className='border border-black mb-2'
+              className='border border-black mb-2 outline-none'
               type="email"
               name="email"
               placeholder='Email'
@@ -69,7 +70,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
           </div>
           <div>
             <input
-              className='border border-black mb-2'
+              className='border border-black mb-2 outline-none'
               type="text"
               name="subject"
               placeholder='Onderwerp'
@@ -79,7 +80,7 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
           </div>
           <div>
             <input
-              className='border border-black mb-2'
+              className='border border-black mb-2 outline-none'
               type="text"
               name="reaction"
               placeholder='Reactie'
