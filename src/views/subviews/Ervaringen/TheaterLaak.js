@@ -1,8 +1,6 @@
 import React from 'react';
 import FrontPageTheaterLaak from '../../../media/TheaterLaak/FrontPageTheaterLaak.png';
-import KaartjesBestellenTheaterLaak from '../../../media/TheaterLaak/KaartjesBestellenTheaterLaak.jpg';
 import KaartjesBestellenTheaterLaakKlein from '../../../media/TheaterLaak/KaartjesBestellenTheaterLaakKlein.png';
-import TheaterLaakVoorstelling from '../../../media/TheaterLaak/TheaterLaakVoorstelling.png';
 import CypressLogo from '../../../media/Logos/CypressLogo.jpeg';
 import GenericArticle from '../../../components/GenericArticle';
 
