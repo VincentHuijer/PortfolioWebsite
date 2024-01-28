@@ -6,6 +6,10 @@ import Calendar from '../media/Stockfotos/Calendar.jpg';
 import GenericArticle from '../components/GenericArticle';
 import FrontPageTheaterLaak from '../media/TheaterLaak/FrontPageTheaterLaak.png';
 import Betabit from '../media/Other/Betabit.png'
+import JavaLogo from '../media/Logos/JavaLogo.png' 
+import ReactLogo from '../media/Logos/ReactLogo.png' 
+import VueLogo from '../media/Logos/VueLogo.png' 
+import PythonLogo from '../media/Logos/PythonLogo.png' 
 
 const Portfolio = () => {
   return (
@@ -17,24 +21,36 @@ const Portfolio = () => {
         <div className='flex justify-center'>
           <div className='w-8/12 ml-36'>
               <GenericArticle
-                imageSrc={Calendar}
-                title="Stageopdracht: Een tijdregistratietool en sprintplanner doormiddel van Vue.js"
+                imageSrc={VueLogo}
+                title="Een tijdregistratietool en sprintplanner"
                 text="Met het huidige systeem van Uniware wordt tijd geregistreerd doormiddel van actiepunten. Actiepunten zijn activiteiten die een medewerker uitvoert voor een klant. Het systeem werkt goed voor interne administratieve doeleinden, maar het is lastig om de activiteiten op efficiënte wijze te delen met medewerkers en klanten. Hiervoor is aan mij de taak om een web-interface te bouwen."
                 linkReference={'Uniware'}
+                linkText={'+ LEES MEER'}
               />
 
               <GenericArticle
-                imageSrc={FrontPageTheaterLaak}
-                title="Schoolopdracht: Een interactieve website voor Theater Laak"
-                text="Doormiddel van React.js en C# heb ik een interactieve website gemaakt voor Theater Laak. De website is gemaakt voor de bezoekers van het theater. De website is gemaakt om de bezoekers te informeren over de voorstellingen en om de bezoekers te enthousiasmeren om een voorstelling te bezoeken."
+                imageSrc={ReactLogo}
+                title="Een interactieve website voor Theater Laak"
+                text="Doormiddel van React.js en C# heb ik in een team gewerkt aan een interactieve website voor Theater Laak."
+                // text="Doormiddel van React.js en C# heb ik in een team gewerkt aan een interactieve website voor Theater Laak. Via de website is het mogelijk om tickets voor een stoel in een zaal voor een voorstelling te kopen. De voorstellingen zijn te vinden in de lijst van shows in een kalender"
                 linkReference={'TheaterLaak'}
+                linkText={'+ LEES MEER'}
               />
 
               <GenericArticle
-                imageSrc={Betabit}
-                title="Schoolopdracht: Een tool voor medewerkers van Betabit om milieubewuster reizen te stimuleren"
-                text="Met het huidige systeem van Uniware wordt tijd geregistreerd doormiddel van actiepunten. Actiepunten zijn activiteiten die een medewerker uitvoert voor een klant. Het systeem werkt goed voor interne administratieve doeleinden, maar het is lastig om de activiteiten op efficiënte wijze te delen met medewerkers en klanten. Hiervoor is aan mij de taak om een web-interface te bouwen."
-                linkReference={'BetaBit'}
+                imageSrc={JavaLogo}
+                title="Een applicatie voor medewerkers van Betabit om milieubewuster reizen te stimuleren"
+                text="Betabit zet zich in om een steeds groener en milieubewuster bedrijf te worden. Hiervoor hebben ze gevraagd of ik een applicatie kan maken die medewerkers stimuleert om milieubewuster te reizen. De applicatie is gemaakt met JavaFX. De medewerkers kunnen doormiddel van de applicatie punten verdienen door milieubewust te reizen. De punten kunnen vervolgens worden ingewisseld voor beloningen."
+                linkReference={'Betabit'}
+                linkText={'+ LEES MEER'}
+              />
+
+              <GenericArticle
+                imageSrc={PythonLogo}
+                title="Webscraping, optimaliseren productselectie door middel van sentimentanalyse op reviews en kleuranalyse van productfoto's."
+                text="Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. De reviews worden geanalyseerd op sentiment en de productfoto's worden geanalyseerd op kleur. De resultaten van de webscraper worden opgeslagen in een Supabase Database. De resultaten heb ik vervolgens gebruikt om een uitspraak te doen voor het bedrijf welke kleuren sneakers het meest verstandigst zijn om in te kopen en welke punten klanten het meest op letten."
+                linkReference={'TheGreatOutdoors'}
+                linkText={'+ LEES MEER'}
               />
 
 
@@ -51,8 +67,12 @@ const Portfolio = () => {
             </div>
 
             <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Wat doet Vincent Nou weer</div>
-              <div> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Kleine projecten
+              <ul>
+                <li className="font-sans text-sm"><a href="https://github.com/VincentHuijer/ArcaneAegis">Unity game project Arcane Aegis</a></li>
+                <li className="font-sans text-sm"><a href="https://github.com/VincentHuijer/FilmsZoekenAPIMetReact">React project, films zoeken doormiddel van een API</a></li>
+              </ul>
+              </div>
             </div>
 
             <div className="bg-[#F7F7F7] p-6 mb-7">

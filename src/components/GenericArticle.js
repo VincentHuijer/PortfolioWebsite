@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GenericArticle = ({ imageSrc, title, text, linkReference }) => {
+const GenericArticle = ({ imageSrc, title, text, linkReference, linkText }) => {
   return (
     <div className="grid grid-cols-4 border-b border-gray-300 mb-5">
       <div className="col-span-1">
@@ -14,7 +14,7 @@ const GenericArticle = ({ imageSrc, title, text, linkReference }) => {
         </div>
         <div className="font-sans text-sm">{text}</div>
         <div className="flex justify-end mt-2">
-          <a href={linkReference} className="text-gray-300 ml-auto mt-1 font-sans text-sm">+ LEES MEER</a>
+          <a href={linkReference} className="text-gray-300 ml-auto mt-1 font-sans text-sm">{linkText}</a>
         </div>
       </div>
     </div>

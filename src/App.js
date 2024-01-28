@@ -9,7 +9,8 @@ import Profiel from './views/Profiel';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Theaterlaak from './views/subviews/Ervaringen/TheaterLaak'
+import Uniware from './views/subviews/Ervaringen/Uniware'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/todo" element={<Todo />} />
+          <Route path="/theaterLaak" element={<Theaterlaak />} />
+          <Route path="/Uniware" element={<Uniware />} />
         </Routes>
       </div>
     </Router>
