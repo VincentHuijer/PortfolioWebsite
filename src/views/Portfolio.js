@@ -70,10 +70,12 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Breaking news</div>
-              <div> Eens, in een klein dorpje genaamd Nootdorp, leefde er een eigenaardige eend genaamd Eddie. Eddie was niet zomaar een eend; hij had een onweerstaanbaar talent voor het imiteren van andere dieren. Op een dag besloot Eddie een feest te organiseren voor alle dieren in het dorp. De uitnodigingen waren snel verspreid, en al gauw stond het hele dorp te trappelen van opwinding voor het grote feest. De dieren kwamen van heinde en verre om Eddie's talent te bewonderen.</div>
-            </div>
+            {/* <div className="bg-[#F7F7F7] p-6 mb-7">
+              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Accessibility certificering</div>
+              <div>
+              <a href="../media/Files/AccesibilityCertificaat.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+              </div>
+            </div> */}
 
             <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Marco</div>

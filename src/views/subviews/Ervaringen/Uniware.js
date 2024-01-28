@@ -1,8 +1,13 @@
 import React from 'react';
 import KalenderWeek from '../../../media/UniwareStage/KalenderWeek.jpg';
+import KalenderMaand from '../../../media/UniwareStage/KalenderMaand.jpg';
+import KalenderLijst from '../../../media/UniwareStage/KalenderLijst.jpg';
+import ActieDetails from '../../../media/UniwareStage/ActieDetails.png';
+import ActieAanmaken from '../../../media/UniwareStage/ActieAanmaken.png';
 import FullCalendarLogo from '../../../media/Logos/FullCalendarLogo.png';
 import VueLogo from '../../../media/Logos/VueLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
+import { Carousel, IconButton  } from "@material-tailwind/react";
 
 
 const Homepage = () => {
@@ -15,21 +20,78 @@ const Homepage = () => {
         <div className='flex justify-center'>
           <div className='w-8/12 ml-36'>
             <div>
-              <img src={KalenderWeek} alt="Vincent Huijer" className="w-3/4" />
+            <Carousel
+              className="rounded-xl"
+              autoplay={true}
+              prevArrow={({ handlePrev }) => (
+                <IconButton
+                  variant="text"
+                  color="black"
+                  size="lg"
+                  onClick={handlePrev}
+                  className="!absolute top-2/4 left-4 -translate-y-2/4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </IconButton>
+              )}
+              nextArrow={({ handleNext }) => (
+                <IconButton
+                  variant="text"
+                  color="black"
+                  size="lg"
+                  onClick={handleNext}
+                  className="!absolute top-2/4 !right-4 -translate-y-2/4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </IconButton>
+              )}
+            >
+          
+              <img src={KalenderWeek} alt="Vincent Huijer" className="h-full w-full object-cover"/>
+              <img src={KalenderMaand} alt="Vincent Huijer" className="h-full w-full object-cover"/>
+              <img src={KalenderLijst} alt="Vincent Huijer" className="h-full w-full object-cover"/>
+              <img src={ActieDetails} alt="Vincent Huijer" className="h-full w-full object-cover"/>
+              <img src={ActieAanmaken} alt="Vincent Huijer" className="h-full w-full object-cover"/>
+            </Carousel>
             </div>
             <div className="pl-64 text-sm mb-5">Uniware week overzicht</div>
-
             <GenericArticle
               imageSrc={VueLogo}
               title="Vue.js"
               text="Ik heb mijn stage in Vue.js merendeels gedaan."
             />
-
             <GenericArticle
               imageSrc={FullCalendarLogo}
               title="FullCalendar library"
               text="FullCalendar is de meest gebruikte Javascript Library voor het maken van Kalender overzichten. Doormiddel van FullCalendar "
             />
+            
 
             
             
