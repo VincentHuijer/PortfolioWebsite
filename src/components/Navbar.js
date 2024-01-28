@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="flex space-x-4">
             <a href="/" className="text-black text-sm font-serif">Home</a>
             <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
-            <a href="/projects" className="text-black text-sm font-serif">Projects</a>
+            <a href="/Portfolio" className="text-black text-sm font-serif">Portfolio</a>
             <a href="/skills" className="text-black text-sm font-serif">Ervaringen</a>
             <button className='text-black text-sm font-serif' onClick={openContactModal}>Contact</button>
             <ContactModal
