@@ -1,15 +1,14 @@
 import React from 'react';
 import Sidebar from '../../../components/Sidebar';
+import GreenbitReisToevoegen from '../../../media/Betabit/GreenbitReisToevoegen.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
-import GreenbitReisToevoegen from '../../../media/Betabit/GreenbitReisToevoegen.png';
-import GenericArticle from '../../../components/GenericArticle';
 
 const Betabit = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="bg-[#f4f4f4] p-3 text-center mb-7 w-full">
-        <div className="text-black text-2xl font-serif">Betabit</div>
+      <a href="https://github.com/VincentHuijer/BetaBitMilieubewustReizen" className="text-2xl font-serif text-black hover:underline mr-4"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>Betabit</a>
       </div>
       <div className="md:flex md:justify-center mx-12">
         <div className="md:w-5/12 ml-4 md:ml-0 md:mr-4 mb-8">

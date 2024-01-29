@@ -10,6 +10,7 @@ import VueLogo from '../../../media/Logos/VueLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
 import { Carousel, IconButton  } from "@material-tailwind/react";
 import Sidebar from '../../../components/Sidebar';
+
 const Uniware = () => {
   return (
     <div className="flex flex-col items-center">
