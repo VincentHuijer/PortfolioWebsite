@@ -15,8 +15,13 @@ const Navbar = () => {
           <a href="/" className="text-black text-sm font-serif">Vincent Huijer</a>
           <div className="flex space-x-4">
             <a href="/" className="text-black text-sm font-serif">Home</a>
-            <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
+            {/* <a href="/profiel" className="text-black text-sm font-serif">Profiel</a> */}
             <a href="/Portfolio" className="text-black text-sm font-serif">Portfolio</a>
+            <button className='text-black text-sm font-serif' onClick={openContactModal}>Contact</button>
+            <ContactModal
+              isOpen={isContactModalOpen}
+              onRequestClose={closeContactModal}
+            />          
             <a 
               href="https://github.com/VincentHuijer"
               target="_blank"
@@ -32,11 +37,6 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faLinkedin}/>
             </a> 
            
-            <button className='text-black text-sm font-serif' onClick={openContactModal}>Contact</button>
-            <ContactModal
-              isOpen={isContactModalOpen}
-              onRequestClose={closeContactModal}
-            />          
           </div>
         </div>
       </div>

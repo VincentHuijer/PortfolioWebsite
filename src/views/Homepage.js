@@ -1,78 +1,37 @@
 import React from 'react';
-import SearchBar from '../components/Searchbar';
-import GenericArticle from '../components/GenericArticle';
-import JavaLogo from '../media/Logos/JavaLogo.png' 
-import ReactLogo from '../media/Logos/ReactLogo.png' 
-import VueLogo from '../media/Logos/VueLogo.png' 
-import PythonLogo from '../media/Logos/PythonLogo.png' 
+import VincentHuijer from '../media/VincentHuijer.png';
+import Sidebar from '../components/Sidebar';
 
 const Homepage = () => {
   return (
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
-        <div className="text-black text-2xl font-serif">Portfolio</div>
+        <div className="text-black text-2xl font-serif">Vincent Huijer</div>
       </div>
       <div>
         <div className='flex justify-center'>
           <div className='w-8/12 ml-36'>
-              <GenericArticle
-                imageSrc={VueLogo}
-                title="Een tijdregistratietool en sprintplanner"
-                text="Met het huidige systeem van Uniware wordt tijd geregistreerd doormiddel van actiepunten. Actiepunten zijn activiteiten die een medewerker uitvoert voor een klant. Het systeem werkt goed voor interne administratieve doeleinden, maar het is lastig om de activiteiten op efficiënte wijze te delen met medewerkers en klanten. Hiervoor is aan mij de taak om een web-interface te bouwen."
-                linkReference={'Uniware'}
-                linkText={'+ LEES MEER'}
-              />
+            <div>
+              <img src={VincentHuijer} alt="Vincent Huijer" className="w-3/4" />
+            </div>
+            <div className="pl-64 text-sm">Vincent Huijer</div>
 
-              <GenericArticle
-                imageSrc={ReactLogo}
-                title="Een interactieve website voor Theater Laak"
-                text="Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling."
-                linkReference={'TheaterLaak'}
-                linkText={'+ LEES MEER'}
-              />
+            <div>
+              <div className="font-serif text-lg">Studie</div>
+              <div className='mb-5'>Het begin van mijn onderwijsreis vond plaats op Stanislas in de mavo. Na mijn tijd op de mavo maakte ik de overstap naar de havo, waar ik mijn academische horizon verder verbreedde. Mijn studiepad bracht me uiteindelijk naar de Haagse Hogeschool, waar ik aanvankelijk HBO Rechten studeerde. Na een zorgvuldige afweging besloot ik echter dat deze richting niet volledig aan mijn verwachtingen voldeed. Daarom maakte ik de overstap naar HBO ICT, waar mijn passie en interesse beter tot hun recht kwamen. Deze beslissing heeft mijn onderwijsreis verrijkt en mijn pad geleid naar een vakgebied dat beter aansluit bij mijn persoonlijke en professionele doelen.</div>
+            </div>
 
-              <GenericArticle
-                imageSrc={JavaLogo}
-                title="Een applicatie voor medewerkers van Betabit om milieubewuster reizen te stimuleren"
-                text="Betabit zet zich in om een steeds groener en milieubewuster bedrijf te worden. Hiervoor hebben ze gevraagd of ik een applicatie kan maken die medewerkers stimuleert om milieubewuster te reizen. De applicatie is gemaakt met JavaFX. De medewerkers kunnen doormiddel van de applicatie punten verdienen door milieubewust te reizen. De punten kunnen vervolgens worden ingewisseld voor beloningen."
-                linkReference={'Betabit'}
-                linkText={'+ LEES MEER'}
-              />
+            <div>
+              <div className="font-serif text-lg">Gym</div>
+              <div className='mb-5'>Sporten is voor mij niet alleen een fysieke activiteit, maar een essentieel onderdeel van mijn levensstijl en welzijn. Er zijn talloze redenen waarom ik sporten als iets belangrijks beschouw, en het gaat verder dan alleen het streven naar een gezond lichaam. Allereerst ervaar ik sporten als een krachtig middel om stress te verminderen en mijn mentale gezondheid te verbeteren. Tijdens het sporten kan ik mijn gedachten loslaten en me concentreren op het moment, wat resulteert in een gevoel van ontspanning en helderheid. Het helpt me om spanningen kwijt te raken en even te ontsnappen aan de dagelijkse beslommeringen.</div>
+            </div>
 
-              <GenericArticle
-                imageSrc={PythonLogo}
-                title="Webscraping, optimaliseren productselectie door middel van sentimentanalyse op reviews en kleuranalyse van productfoto's."
-                text="Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. De reviews worden geanalyseerd op sentiment en de productfoto's worden geanalyseerd op kleur. De resultaten van de webscraper worden opgeslagen in een Supabase Database. De resultaten heb ik vervolgens gebruikt om een uitspraak te doen voor het bedrijf welke kleuren sneakers het meest verstandigst zijn om in te kopen en welke punten klanten het meest op letten."
-                linkReference={'TheGreatOutdoors'}
-                linkText={'+ LEES MEER'}
-              />
           </div>
+
+
+
           <div className="w-4/12 p-4 mr-36">
-            <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg'> Zoeken in Vincent.com</div>
-              <SearchBar/>
-            </div>
-            <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Kleine projecten
-                <ul>
-                  <li className="font-sans text-sm mb-1">
-                    <a href="https://github.com/VincentHuijer/ArcaneAegis" className="text-gray-800 hover:underline">C# Unity game project, Arcane Aegis</a>
-                  </li>
-                  <li className="font-sans text-sm mb-1">
-                    <a href="https://github.com/VincentHuijer/FilmsZoekenAPIMetReact" className="text-gray-800 hover:underline">React project, films zoeken doormiddel van een API</a>
-                  </li>
-                  <li className="font-sans text-sm mb-1">
-                    <a href="https://github.com/Examenproject/Examentool-voor-studenten" className="text-gray-800 hover:underline">Examentool voor studenten</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Accessibility certificering</div>
-              <div>
-                <a href="https://drive.google.com/file/d/1MRtZNcNN6JZMYKR5S3MQIK2Kx7ffSMVH/view?usp=sharing" className="text-gray-800 hover:underline" target="_blank" rel="noopener noreferrer">Bekijk in Google Drive</a>
-              </div>
-            </div>
+            <Sidebar/>
           </div>
         </div>
       </div>
