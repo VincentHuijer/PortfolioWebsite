@@ -26,8 +26,7 @@ const Portfolio = () => {
               <GenericArticle
                 imageSrc={ReactLogo}
                 title="Een interactieve website voor Theater Laak"
-                text="Doormiddel van React.js en C# heb ik in een team gewerkt aan een interactieve website voor Theater Laak."
-                // text="Doormiddel van React.js en C# heb ik in een team gewerkt aan een interactieve website voor Theater Laak. Via de website is het mogelijk om tickets voor een stoel in een zaal voor een voorstelling te kopen. De voorstellingen zijn te vinden in de lijst van shows in een kalender"
+                text="Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling."
                 linkReference={'TheaterLaak'}
                 linkText={'+ LEES MEER'}
               />
@@ -47,42 +46,33 @@ const Portfolio = () => {
                 linkReference={'TheGreatOutdoors'}
                 linkText={'+ LEES MEER'}
               />
-
-
-           
-
-
           </div>
-
-
           <div className="w-4/12 p-4 mr-36">
             <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg'> Zoeken in Vincent.com</div>
               <SearchBar/>
             </div>
-
             <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Kleine projecten
-              <ul>
-                <li className="font-sans text-sm"><a href="https://github.com/VincentHuijer/ArcaneAegis">Unity game project Arcane Aegis</a></li>
-                <li className="font-sans text-sm"><a href="https://github.com/VincentHuijer/FilmsZoekenAPIMetReact">React project, films zoeken doormiddel van een API</a></li>
-              </ul>
+                <ul>
+                  <li className="font-sans text-sm mb-1">
+                    <a href="https://github.com/VincentHuijer/ArcaneAegis" className="text-gray-800 hover:underline">C# Unity game project, Arcane Aegis</a>
+                  </li>
+                  <li className="font-sans text-sm mb-1">
+                    <a href="https://github.com/VincentHuijer/FilmsZoekenAPIMetReact" className="text-gray-800 hover:underline">React project, films zoeken doormiddel van een API</a>
+                  </li>
+                  <li className="font-sans text-sm mb-1">
+                    <a href="https://github.com/Examenproject/Examentool-voor-studenten" className="text-gray-800 hover:underline">Examentool voor studenten</a>
+                  </li>
+                </ul>
               </div>
             </div>
-
             <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Accessibility certificering</div>
               <div>
-              <a href="https://drive.google.com/file/d/1MRtZNcNN6JZMYKR5S3MQIK2Kx7ffSMVH/view?usp=sharing" target="_blank" rel="noopener noreferrer">Bekijk in Google Drive</a>
+                <a href="https://drive.google.com/file/d/1MRtZNcNN6JZMYKR5S3MQIK2Kx7ffSMVH/view?usp=sharing" className="text-gray-800 hover:underline" target="_blank" rel="noopener noreferrer">Bekijk in Google Drive</a>
               </div>
             </div>
-
-            <div className="bg-[#F7F7F7] p-6 mb-7">
-              <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Marco</div>
-              <div> In het oude Rome, tijdens de glorieuze dagen van het Romeinse Rijk, regeerde een keizer met wijsheid en filosofische diepgang: Marcus Aurelius. Marcus was niet alleen een krachtige heerser, maar ook een wijs en bedachtzaam man. Het was een warme zomerdag toen Marcus Aurelius besloot om een rustige wandeling te maken door de tuinen van zijn paleis. Terwijl hij door de schaduwrijke paden slenterde, overpeinsde hij zijn plichten als keizer en filosoof. Plotseling hoorde Marcus het geluid van zachte voetstappen achter zich. Hij draaide zich om en zag een jonge schildknaap genaamd Lucius. Lucius had bewondering voor de keizer en vroeg toestemming om met hem te praten.</div>
-            </div>
-
-
           </div>
         </div>
       </div>
