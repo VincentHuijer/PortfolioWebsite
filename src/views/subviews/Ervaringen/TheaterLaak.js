@@ -1,14 +1,10 @@
 import React from 'react';
 import FrontPageTheaterLaak from '../../../media/TheaterLaak/FrontPageTheaterLaak.png';
-import TheaterLaakInloggen from '../../../media/TheaterLaak/TheaterLaakInloggen.png';
 import TheaterLaakRegistreren from '../../../media/TheaterLaak/TheaterLaakRegistreren.png';
-import TheaterLaakWinkelmand from '../../../media/TheaterLaak/TheaterLaakWinkelmand.png';
-import TheaterLaakKaartjesBestellen from '../../../media/TheaterLaak/TheaterLaakKaartjesBestellen.jpg';
 import TheaterLaakKaartjesBestellenKlein from '../../../media/TheaterLaak/TheaterLaakKaartjesBestellenKlein.png';
 import CypressLogo from '../../../media/Logos/CypressLogo.jpeg';
 import NetlifyLogo from '../../../media/Logos/NetlifyLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
-import { Carousel, IconButton  } from "@material-tailwind/react";
 
 
 const Homepage = () => {
