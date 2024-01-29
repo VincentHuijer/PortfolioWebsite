@@ -18,7 +18,15 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    
+    if ((formData.name && formData.email && formData.subject && formData.reaction)) {
+      console.log('Form submitted:', formData);
+      onRequestClose();
+    }
+
+    else {
+      console.log('form not filled out yet')
+    }
   };
 
   const modalStyle = {
