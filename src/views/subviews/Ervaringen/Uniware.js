@@ -84,7 +84,7 @@ const Homepage = () => {
               <img src={Sprint} alt="Sprintplanner" className="h-full w-full object-cover"/>
             </Carousel>
             </div>
-            <div className="pl-64 text-sm mb-5">Uniware week overzicht</div>
+            <div className="pl-64 text-sm mb-5">Uniware overzichten</div>
 
 
             <div>
