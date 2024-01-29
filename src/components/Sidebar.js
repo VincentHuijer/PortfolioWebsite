@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
   <div>
   <div className="bg-[#F7F7F7] p-6 mb-7">
-    <div className='font-serif text-lg'> Zoeken in VincentHuijer.com</div>
+    <div className='font-serif text-lg'> Zoeken in vincenthuijer.netlify.app</div>
     <SearchBar/>
   </div>
 
