@@ -9,6 +9,8 @@ import Profiel from './views/Profiel';
 import './index.css';
 import Theaterlaak from './views/subviews/Ervaringen/TheaterLaak'
 import Uniware from './views/subviews/Ervaringen/Uniware'
+import Betabit from './views/subviews/Ervaringen/Betabit'
+import TheGreatOutdoors from './views/subviews/Ervaringen/TheGreatOutdoors'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/todo" element={<Todo />} />
           <Route path="/theaterLaak" element={<Theaterlaak />} />
           <Route path="/Uniware" element={<Uniware />} />
+          <Route path="/Betabit" element={<Betabit />} />
+          <Route path="/TheGreatOutdoors" element={<TheGreatOutdoors />} />
         </Routes>
       </div>
     </Router>

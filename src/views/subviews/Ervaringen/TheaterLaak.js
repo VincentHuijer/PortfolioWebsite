@@ -6,18 +6,20 @@ import CypressLogo from '../../../media/Logos/CypressLogo.jpeg';
 import NetlifyLogo from '../../../media/Logos/NetlifyLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
 import Sidebar from '../../../components/Sidebar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
 
 const Homepage = () => {
   return (
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
-        <div className="text-black text-2xl font-serif">Theater Laak</div>
+        <a href="https://github.com/VincentHuijer/WDPR" className="text-2xl font-serif text-black hover:underline"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Theater Laak</a>
       </div>
       <div>
         <div className='flex justify-center'>
-          <div className='w-8/12 ml-36'>
+        <div className='w-5/12 ml-48 mr-24'>
             <div>
-              <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="w-3/4" />
+              <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="" />
             </div>
             <div className="pl-64 text-sm mb-5 mr-5">Theater laak frontpage</div>
 

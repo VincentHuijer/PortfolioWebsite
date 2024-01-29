@@ -4,8 +4,7 @@ import KalenderMaand from '../../../media/UniwareStage/KalenderMaand.jpg';
 import KalenderLijst from '../../../media/UniwareStage/KalenderLijst.jpg';
 import ActieDetails from '../../../media/UniwareStage/ActieDetails.png';
 import KalenderevenementBeheren from '../../../media/UniwareStage/KalenderevenementBeheren.png';
-import Sprint from '../../../media/UniwareStage/Sprint.png';
-import SprintBeheren from '../../../media/UniwareStage/SprintBeheren.png';
+import SprintKlein from '../../../media/UniwareStage/SprintKlein.png';
 import FullCalendarLogo from '../../../media/Logos/FullCalendarLogo.png';
 import VueLogo from '../../../media/Logos/VueLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
@@ -20,76 +19,72 @@ const Homepage = () => {
       </div>
       <div>
         <div className='flex justify-center'>
-          <div className='w-8/12 ml-36'>
+          <div className='w-5/12 ml-48 mr-24'>
             <div>
-            <Carousel
-              className="rounded-xl"
-              autoplay={true}
-              prevArrow={({ handlePrev }) => (
-                <IconButton
-                  variant="text"
-                  color="black"
-                  size="lg"
-                  onClick={handlePrev}
-                  className="!absolute top-2/4 left-4 -translate-y-2/4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-6 w-6"
+              <Carousel
+                className="rounded-xl"
+                autoplay={true}
+                prevArrow={({ handlePrev }) => (
+                  <IconButton
+                    variant="text"
+                    color="black"
+                    size="lg"
+                    onClick={handlePrev}
+                    className="!absolute top-2/4 left-4 -translate-y-2/4"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                    />
-                  </svg>
-                </IconButton>
-              )}
-              nextArrow={({ handleNext }) => (
-                <IconButton
-                  variant="text"
-                  color="black"
-                  size="lg"
-                  onClick={handleNext}
-                  className="!absolute top-2/4 !right-4 -translate-y-2/4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-6 w-6"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                      />
+                    </svg>
+                  </IconButton>
+                )}
+                nextArrow={({ handleNext }) => (
+                  <IconButton
+                    variant="text"
+                    color="black"
+                    size="lg"
+                    onClick={handleNext}
+                    className="!absolute top-2/4 !right-4 -translate-y-2/4"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </IconButton>
-              )}
-            >
-          
-              <img src={KalenderWeek} alt="Kalender Week" className="h-full w-full object-cover"/>
-              <img src={KalenderMaand} alt="Kalender Maand" className="h-full w-full object-cover"/>
-              <img src={KalenderLijst} alt="Kalender Lijst" className="h-full w-full object-cover"/>
-              <img src={ActieDetails} alt="Actie details" className="h-full w-full object-cover"/>
-              <img src={KalenderevenementBeheren} alt="KalenderEvenementBeheren" className="h-full w-full object-cover"/>
-              <img src={SprintBeheren} alt="Sprint beheren" className="h-full w-full object-cover"/>
-              <img src={Sprint} alt="Sprintplanner" className="h-full w-full object-cover"/>
-            </Carousel>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </IconButton>
+                )}
+              >
+            
+                <img src={KalenderWeek} alt="Kalender Week" className="h-full w-full object-cover"/>
+                <img src={KalenderMaand} alt="Kalender Maand" className="h-full w-full object-cover"/>
+                <img src={KalenderLijst} alt="Kalender Lijst" className="h-full w-full object-cover"/>
+                <img src={ActieDetails} alt="Actie details" className="h-full w-full object-cover"/>
+                <img src={KalenderevenementBeheren} alt="KalenderEvenementBeheren" className="h-full w-full object-cover"/>
+                <img src={SprintKlein} alt="Sprintplanner" className="h-full w-full object-cover"/>
+              </Carousel>
             </div>
             <div className="pl-64 text-sm mb-5">Uniware overzichten</div>
-
-
             <div>
-
-            De doelstelling van de opdracht is het realiseren van een interactieve web-interface met een scrum-board view, waarin de status, prioriteit en tijdregistratie van actiepunten snel en eenvoudig kunnen worden bijgewerkt. Dit stelt Uniware in staat om de tijdregistratie duidelijk te delen en de voortgang van taken en kosten in tijd transparant weer te geven. Hierdoor kan de organisatie efficiëntere processen realiseren en het probleem van het delen van actiepunten met medewerkers en klanten oplossen.
+              De doelstelling van de opdracht is het realiseren van een interactieve web-interface met een scrum-board view, waarin de status, prioriteit en tijdregistratie van actiepunten snel en eenvoudig kunnen worden bijgewerkt. Dit stelt Uniware in staat om de tijdregistratie duidelijk te delen en de voortgang van taken en kosten in tijd transparant weer te geven. Hierdoor kan de organisatie efficiëntere processen realiseren en het probleem van het delen van actiepunten met medewerkers en klanten oplossen.
             </div>
             <GenericArticle
               imageSrc={VueLogo}

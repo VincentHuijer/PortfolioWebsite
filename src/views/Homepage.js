@@ -10,9 +10,9 @@ const Homepage = () => {
       </div>
       <div>
         <div className='flex justify-center'>
-          <div className='w-8/12 ml-36'>
+        <div className='w-5/12 ml-48 mr-24'>
             <div>
-              <img src={VincentHuijer} alt="Vincent Huijer" className="w-3/4" />
+              <img src={VincentHuijer} alt="Vincent Huijer" className="" />
             </div>
             <div className="pl-64 text-sm">Vincent Huijer</div>
 

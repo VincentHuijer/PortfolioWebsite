@@ -9,10 +9,10 @@ const GenericArticle = ({ imageSrc, title, text, linkReference, linkText }) => {
         </a>
       </div>
       <div className="col-span-3 flex flex-col ml-4">
-        <div className="font-serif text-lg">
+        <div className="font-serif text-xl mb-2">
           <a href={linkReference}>{title}</a>
         </div>
-        <div className="font-sans text-sm flex-grow">{text}</div>
+        <div className="font-sans flex-grow">{text}</div>
         <div className="flex justify-end mt-2">
           <a href={linkReference} className="text-gray-300 ml-auto font-sans text-sm">{linkText}</a>
         </div>
