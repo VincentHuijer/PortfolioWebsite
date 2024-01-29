@@ -9,26 +9,26 @@ import Sidebar from '../../../components/Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
 
-const Homepage = () => {
+const TheaterLaak = () => {
   return (
-    <div className="">
-      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
-        <a href="https://github.com/VincentHuijer/WDPR" className="text-2xl font-serif text-black hover:underline"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Theater Laak</a>
+    <div className="flex flex-col items-center">
+      <div className="bg-[#f4f4f4] p-3 text-center mb-7 w-full">
+        <a href="https://github.com/VincentHuijer/WDPR" className="text-2xl font-serif text-black hover:underline">
+          <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Theater Laak
+        </a>
       </div>
-      <div>
-        <div className='flex justify-center'>
-        <div className='w-5/12 ml-48 mr-24'>
-            <div>
-              <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="" />
-            </div>
-            <div className="pl-64 text-sm mb-5 mr-5">Theater laak frontpage</div>
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-start mx-12">
+        <div className="w-full md:w-5/12 mb-6 md:mb-0 mr-12 md:mr-24">
+          <div>
+            <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="w-full" />
+            <div className="text-center text-sm mt-2">Theater laak frontpage</div>
+          </div>
 
-            <div className="font-sans mb-20">
-              Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling.
-            </div>
+          <div className="font-sans mb-20">
+          Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling.
+          </div>
 
-            
-            <GenericArticle
+          <GenericArticle
              imageSrc={TheaterLaakRegistreren}
              title="Authenticatie"
              text="We hebben ons ook beziggehouden met de authenticatie door de mogelijkheid van tweestapsverificatie (2FA) toe te passen. We hebben minimale eisen gesteld aan gebruikersgegevens om de veiligheid te waarborgen, en we hebben maatregelen genomen om ongewenste scripts te voorkomen. Bovendien hebben we cookies geïmplementeerd, zodat gebruikers bij het verlaten van de website nog steeds ingelogd blijven bij hun volgende bezoek. Dit draagt bij aan een naadloze en veilige gebruikerservaring."
@@ -52,16 +52,13 @@ const Homepage = () => {
               title="CI/CD"
               text="We hebben onze website gedeployed op Netlify, dit is een gratis service die automatisch je website update op het moment dat je naar github pusht. Een mooi deel hiervan is dat er ook nog onderscheid wordt gemaakt tussen de branches. Zo hadden we een development branch waarbij de Netlify link “development–theater-laak.netlify.app” was, maar voor main is het “theater-laak.netlify.app”. Voor de backend hebben we gekozen om te deployen op Azure, elke keer als we wijzigingen doorvoeren doen we een deploy om de API te updaten. Ook de database werd continu geupdate, dit hebben we code first gedaan met behulp van Entity Framework. We hebben (na goedkeuring van onze begeleider) gekozen voor een online database van Supabase. Dit heeft een heel gebruiksvriendelijke interface, was makkelijk te verbinden en bied ruim genoeg opslag voor wat we hebben gemaakt."
             />
-          </div>
-
-
-          <div className="w-4/12 p-4 mr-36">
-            <Sidebar/>
-          </div>
+        </div>
+        <div className="w-4/12 p-4">
+          <Sidebar />
         </div>
       </div>
     </div>
   );
 };
 
-export default Homepage;
+export default TheaterLaak;

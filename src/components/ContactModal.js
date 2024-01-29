@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-Modal.setAppElement('#root'); 
+Modal.setAppElement('#root');
 
 const ContactModal = ({ isOpen, onRequestClose }) => {
   const [formData, setFormData] = useState({
@@ -18,14 +18,12 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    if ((formData.name && formData.email && formData.subject && formData.reaction)) {
+
+    if (formData.name && formData.email && formData.subject && formData.reaction) {
       console.log('Form submitted:', formData);
       onRequestClose();
-    }
-
-    else {
-      console.log('form not filled out yet')
+    } else {
+      console.log('Form not filled out yet');
     }
   };
 
@@ -34,14 +32,11 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    backgroundColor: '#E2E2E2',//#e5e7eb
+    backgroundColor: '#E2E2E2',
     padding: '20px',
     borderRadius: '8px',
-    width: '30%',
-    height: '30%',
-    
-    // maxWidth: '400px',
-    // maxHeight: '300px',
+    width: '80%', // Adjusted width for better responsiveness
+    maxWidth: '400px', // Added max width for smaller screens
   };
 
   return (
@@ -49,16 +44,16 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Contact Modal"
-      style={{ 
-        overlay: { backgroundColor: 'rgba(0, 0, 0, 0.7)' }, 
-        content: modalStyle
+      style={{
+        overlay: { backgroundColor: 'rgba(0, 0, 0, 0.7)' },
+        content: modalStyle,
       }}
     >
       <div>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="mb-2">
             <input
-              className='border border-black mb-2 outline-none'
+              className='border border-black w-full outline-none p-2'
               type="text"
               name="name"
               placeholder='Naam'
@@ -66,9 +61,9 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
               onChange={handleInputChange}
             />
           </div>
-          <div>
+          <div className="mb-2">
             <input
-              className='border border-black mb-2 outline-none'
+              className='border border-black w-full outline-none p-2'
               type="email"
               name="email"
               placeholder='Email'
@@ -76,9 +71,9 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
               onChange={handleInputChange}
             />
           </div>
-          <div>
+          <div className="mb-2">
             <input
-              className='border border-black mb-2 outline-none'
+              className='border border-black w-full outline-none p-2'
               type="text"
               name="subject"
               placeholder='Onderwerp'
@@ -86,9 +81,9 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
               onChange={handleInputChange}
             />
           </div>
-          <div>
+          <div className="mb-2">
             <input
-              className='border border-black mb-2 outline-none'
+              className='border border-black w-full outline-none p-2'
               type="text"
               name="reaction"
               placeholder='Reactie'
@@ -96,8 +91,10 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
               onChange={handleInputChange}
             />
           </div>
-          <div>
-            <button type="submit">Versturen</button>
+          <div className="mb-2">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded" type="submit">
+              Versturen
+            </button>
           </div>
         </form>
       </div>
@@ -106,4 +103,3 @@ const ContactModal = ({ isOpen, onRequestClose }) => {
 };
 
 export default ContactModal;
-

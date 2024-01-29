@@ -1,11 +1,11 @@
-import React from 'react';
-import VincentHuijer from '../media/VincentHuijer.png';
-import Sidebar from '../components/Sidebar';
+// import React from 'react';
+// import VincentHuijer from '../media/VincentHuijer.png';
+// import Sidebar from '../components/Sidebar';
 
-const Homepage = () => {
+const Profiel = () => {
   return (
     <div className="">
-      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
+      {/* <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
         <div className="text-black text-2xl font-serif">Vincent Huijer</div>
       </div>
       <div>
@@ -34,9 +34,9 @@ const Homepage = () => {
             <Sidebar/>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Homepage;
+export default Profiel;
