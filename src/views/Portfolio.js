@@ -70,12 +70,12 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* <div className="bg-[#F7F7F7] p-6 mb-7">
+            <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Accessibility certificering</div>
               <div>
-              <a href="../media/Files/AccesibilityCertificaat.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
+              <a href="https://drive.google.com/file/d/1MRtZNcNN6JZMYKR5S3MQIK2Kx7ffSMVH/view?usp=sharing" target="_blank" rel="noopener noreferrer">Bekijk in Google Drive</a>
               </div>
-            </div> */}
+            </div>
 
             <div className="bg-[#F7F7F7] p-6 mb-7">
               <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Marco</div>

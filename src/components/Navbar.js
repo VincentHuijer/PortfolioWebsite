@@ -1,5 +1,7 @@
 import ContactModal from '../components/ContactModal';
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Import the GitHub icon
 
 const Navbar = () => {
   const [isContactModalOpen, setContactModalOpen] = useState(false);
@@ -15,6 +17,7 @@ const Navbar = () => {
             <a href="/" className="text-black text-sm font-serif">Home</a>
             <a href="/profiel" className="text-black text-sm font-serif">Profiel</a>
             <a href="/Portfolio" className="text-black text-sm font-serif">Portfolio</a>
+            <FontAwesomeIcon icon={faGithub} />
             <button className='text-black text-sm font-serif' onClick={openContactModal}>Contact</button>
             <ContactModal
               isOpen={isContactModalOpen}

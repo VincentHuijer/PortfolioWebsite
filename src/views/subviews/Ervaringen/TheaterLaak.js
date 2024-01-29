@@ -1,8 +1,14 @@
 import React from 'react';
 import FrontPageTheaterLaak from '../../../media/TheaterLaak/FrontPageTheaterLaak.png';
-import KaartjesBestellenTheaterLaakKlein from '../../../media/TheaterLaak/KaartjesBestellenTheaterLaakKlein.png';
+import TheaterLaakInloggen from '../../../media/TheaterLaak/TheaterLaakInloggen.png';
+import TheaterLaakRegistreren from '../../../media/TheaterLaak/TheaterLaakRegistreren.png';
+import TheaterLaakWinkelmand from '../../../media/TheaterLaak/TheaterLaakWinkelmand.png';
+import TheaterLaakKaartjesBestellen from '../../../media/TheaterLaak/TheaterLaakKaartjesBestellen.jpg';
+import TheaterLaakKaartjesBestellenKlein from '../../../media/TheaterLaak/TheaterLaakKaartjesBestellenKlein.png';
 import CypressLogo from '../../../media/Logos/CypressLogo.jpeg';
+import NetlifyLogo from '../../../media/Logos/NetlifyLogo.png';
 import GenericArticle from '../../../components/GenericArticle';
+import { Carousel, IconButton  } from "@material-tailwind/react";
 
 
 const Homepage = () => {
@@ -15,28 +21,39 @@ const Homepage = () => {
         <div className='flex justify-center'>
           <div className='w-8/12 ml-36'>
             <div>
-              <img src={FrontPageTheaterLaak} alt="Vincent Huijer" className="w-3/4" />
+              <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="w-3/4" />
             </div>
-            <div className="pl-64 text-sm mb-5">Theater laak frontpage</div>
+            <div className="pl-64 text-sm mb-5 mr-5">Theater laak frontpage</div>
+
+            <div className="font-sans mb-20">
+              Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling.
+            </div>
+
+            
+            <GenericArticle
+             imageSrc={TheaterLaakRegistreren}
+             title="Authenticatie"
+             text="We hebben ons ook beziggehouden met de authenticatie door de mogelijkheid van tweestapsverificatie (2FA) toe te passen. We hebben minimale eisen gesteld aan gebruikersgegevens om de veiligheid te waarborgen, en we hebben maatregelen genomen om ongewenste scripts te voorkomen. Bovendien hebben we cookies geïmplementeerd, zodat gebruikers bij het verlaten van de website nog steeds ingelogd blijven bij hun volgende bezoek. Dit draagt bij aan een naadloze en veilige gebruikerservaring."
+            />
+
 
             <GenericArticle
-              imageSrc={KaartjesBestellenTheaterLaakKlein}
-              title="Bestellen van tickets"
-              text="voor het bestellen van tickets kan je bij een voorstelling van een show op een datum stoelen selecteren als deze beschikbaar zijn. De prijzen zijn afhankelijk van de rang en van de voorstelling. Bij het selecteren en toevoegen van een stoel aan de winkelmand zal bij andere gebruikers de stoel onbeschikbaar gesteld worden voor maximaal 1 uur, zodat er geen dubbele boekingen kunnen plaatsvinden. Bij aankoop worden de tickets aan de gebruiker gekoppeld en kan vanaf het 'mijn tickets' scherm de tickets met een QR code worden gedownload."
+             imageSrc={TheaterLaakKaartjesBestellenKlein}
+             title="Reserveren"
+             text="Ons reserveringssysteem bevat een krachtige Reserverings API met limieten voor het aantal reserveringen. Websockets zorgen voor real-time updates. Een intelligent systeem biedt voorstellingen op basis van aankoopgeschiedenis. Aankoopgeschiedenis en tickets zijn ontworpen voor overzicht en esthetiek. Overweging wordt gegeven aan het integreren van bestellingsoverzichten in de reserverings API. De frontend is naadloos verbonden met de backend via API-requests, inclusief QR-codegeneratie op tickets voor toegangscontrole. Gebruikers kunnen al hun aankopen overzichtelijk bekijken via een menu."
             />
 
             <GenericArticle
               imageSrc={CypressLogo}
               title="Cypress tests"
-              text="We coveren de mogelijkheden van een klant door het testen van het registreren, inloggen en een stoel te reserveren en die van een medewerker door een voorstelling aan een show toe te voegen, de show te zoeken en de gekozen show te verwijderen met automatische Cypress tests."
+              text="Nemen we de verschillende mogelijkheden onder de loep die een klant kan invullen tijdens het registratieproces in de automatische tests. We testen zowel het correct invullen van het registratieformulier als situaties waarin de klant fouten maakt. We controleren bijvoorbeeld op de juistheid van de ingevoerde voor- en achternaam, waarbij we kijken of er geen numerieke tekens aanwezig zijn en of elke naam meer dan één teken heeft. Verder verifiëren we of het ingevoerde e-mailadres geldig is en geen wegwerp-e-mail is. Ook controleren we of de ingevoerde wachtwoorden overeenkomen. Het registratieformulier voert al enkele controles uit op het e-mailadres, zoals de aanwezigheid van karakters voor en na de '@'. Wat betreft voorstellingen, beginnen we met het toevoegen van een gloednieuwe voorstelling als medewerker, inclusief een naam, beschrijving en afbeelding. Daarna voegen we een show toe waarbij de gebruiker een datum en zaalnummer kan opgeven. Omdat medewerkers geen tickets kunnen kopen, testen we vervolgens vanuit een klantaccount het zoeken naar de test dummy voorstelling in de lijst van voorstellingen en het reserveren van een stoel voor de show. We voeren opnieuw tests uit als medewerker om de voorstelling te verwijderen, wat resulteert in het verwijderen van alle shows."
             />
 
-            
-            
-
-           
-
-
+            <GenericArticle
+              imageSrc={NetlifyLogo}
+              title="CI/CD"
+              text="We hebben onze website gedeployed op Netlify, dit is een gratis service die automatisch je website update op het moment dat je naar github pusht. Een mooi deel hiervan is dat er ook nog onderscheid wordt gemaakt tussen de branches. Zo hadden we een development branch waarbij de Netlify link “development–theater-laak.netlify.app” was, maar voor main is het “theater-laak.netlify.app”. Voor de backend hebben we gekozen om te deployen op Azure, elke keer als we wijzigingen doorvoeren doen we een deploy om de API te updaten. Ook de database werd continu geupdate, dit hebben we code first gedaan met behulp van Entity Framework. We hebben (na goedkeuring van onze begeleider) gekozen voor een online database van Supabase. Dit heeft een heel gebruiksvriendelijke interface, was makkelijk te verbinden en bied ruim genoeg opslag voor wat we hebben gemaakt."
+            />
           </div>
 
 
