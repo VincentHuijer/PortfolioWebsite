@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 text-2xl font-serif">Portfolio</div>
       <div>
         <div className='flex flex-col justify-center md:flex-row'>
-          <div className='w-3/4 ml-5 md:w-5/12 md:ml-48 md:mr-24'>
+          <div className='w-3/4 mx-12 md:w-5/12 md:ml-48 md:mr-24'>
             <GenericArticle
               imageSrc={VueLogo}
               title="Een tijdregistratietool en sprintplanner"
