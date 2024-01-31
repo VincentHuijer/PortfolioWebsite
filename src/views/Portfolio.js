@@ -11,7 +11,7 @@ const Portfolio = () => {
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 text-2xl font-serif">Portfolio</div>
       <div>
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center md:flex-row'>
           <div className='w-3/4 ml-5 md:w-5/12 md:ml-48 md:mr-24'>
             <GenericArticle
               imageSrc={VueLogo}
@@ -44,7 +44,7 @@ const Portfolio = () => {
               linkReference={'TheGreatOutdoors'}
               linkText={'+ LEES MEER'}
             />
-        </div>
+          </div>
           <div className="w-4/12 p-4 mr-36">
             <Sidebar/>
           </div>
