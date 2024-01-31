@@ -8,12 +8,11 @@ import Sidebar from '../components/Sidebar';
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-[#f4f4f4] p-3 text-center mb-7 w-full">
-        <div className="text-black text-2xl font-serif">Portfolio</div>
-      </div>
-      <div className='flex flex-col md:flex-row justify-center items-center md:items-start'>
-        <div className='w-full md:w-5/12 mb-6 md:mb-0 mr-15 md:mr-24'>
+    <div className="">
+      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 text-2xl font-serif">Portfolio</div>
+      <div>
+        <div className='flex flex-col justify-center'>
+          <div className='w-3/4 ml-5 md:w-5/12 md:ml-48 md:mr-24'>
             <GenericArticle
               imageSrc={VueLogo}
               title="Een tijdregistratietool en sprintplanner"
@@ -51,6 +50,7 @@ const Portfolio = () => {
         </div>
         </div>
       </div>
+    </div>
   );
 };
 

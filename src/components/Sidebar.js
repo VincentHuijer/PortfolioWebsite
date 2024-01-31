@@ -3,8 +3,8 @@ import SearchBar from "./Searchbar";
 
 const Sidebar = () => {
   return (
-    <div className="hidden lg:block">
-      <div className="bg-[#F7F7F7] p-6 mb-7">
+    <div className="hidden md:block">
+      <div className=" bg-[#F7F7F7] p-6 mb-7">
         <div className='font-serif text-lg'> Zoeken in vincenthuijer.netlify.app</div>
         <SearchBar/>
       </div>

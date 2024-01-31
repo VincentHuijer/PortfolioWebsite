@@ -5,23 +5,21 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const TheGreatOutdoors = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 w-full">
-        <a href="https://github.com/VincentHuijer/Hadoop-Scraper-kleurindeling-sentientreviewsindeling" className="text-2xl font-serif text-black hover:underline mr-4"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>Web Scraper</a>
-        <a href="https://github.com/VincentHuijer/Reviews-waarnemen" className="text-2xl font-serif text-black hover:underline mr-4"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Sentient analysis</a>
-        <a href="https://github.com/VincentHuijer/Modelling-and-evaluation-of-Machine-Learning" className="text-2xl font-serif text-black hover:underline"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Machine Learning</a>
+    <div className="">
+      <div className="bg-[#f4f4f4] p-3 flex flex-row items-center justify-center mb-7">
+        <a href="https://github.com/VincentHuijer/Hadoop-Scraper-kleurindeling-sentientreviewsindeling" className="text-2xl font-serif hover:underline mr-2 md:mr-20"> <FontAwesomeIcon icon={faGithub} className='mr-1'></FontAwesomeIcon>Scraping, kleuranalyse</a>
+        <a href="https://github.com/VincentHuijer/Reviews-waarnemen" className="text-2xl font-serif hover:underline mr-2 md:mr-20"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Sentient Analysis</a>
+        <a href="https://github.com/VincentHuijer/Modelling-and-evaluation-of-Machine-Learning" className="text-2xl font-serif hover:underline mr-2 md:mr-20"> <FontAwesomeIcon icon={faGithub} className='mr-1'></FontAwesomeIcon>Machine Learning</a>
       </div>
-      <div className="md:flex md:justify-center mx-12">
-        <div className="md:w-5/12 ml-4 md:ml-0 md:mr-4 mb-8">
-          <div className="font-sans mb-20">
-            <div className="font-sans text-3xl mb-4">The Great Outdoors </div>
-            <div className="font-sans mb-5">
-              Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. De reviews worden geanalyseerd op sentiment en de productfoto's worden geanalyseerd op kleur. De resultaten van de webscraper worden opgeslagen in een Supabase Database. De resultaten heb ik vervolgens gebruikt om een uitspraak te doen voor het bedrijf welke kleuren sneakers het meest verstandigst zijn om in te kopen en welke punten klanten het meest op letten.
-            </div>
-            <div className="font-serif text-xl mb-5">Scraping</div>
-            <div className="font-sans mb-5">
-              Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. 
-            </div>
+      <div>
+        <div className='flex flex-col justify-center md:flex-row'>
+          <div className='w-3/4 mx-12 md:w-5/12 md:ml-48 md:mr-24'>
+            <div className='font-sans text-3xl mb-4'>The Great Outdoors </div>
+            <div className='font-sans mb-5'>Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. De reviews worden geanalyseerd op sentiment en de productfoto's worden geanalyseerd op kleur. De resultaten van de webscraper worden opgeslagen in een Supabase Database. De resultaten heb ik vervolgens gebruikt om een uitspraak te doen voor het bedrijf welke kleuren sneakers het meest verstandigst zijn om in te kopen en welke punten klanten het meest op letten.</div>
+              <div className="font-serif text-xl mb-5">Scraping</div>
+              <div className="font-sans mb-5">
+                Voor het fictieve bedrijf 'The Great Outdoors', heb ik de opdracht gekregen om onderzoek te doen naar welke sneakers het beste verkopen. Hiervoor heb ik een webscraper gemaakt die de reviews en foto's van de sneakers ophaalt en analyseert. 
+              </div>
             <div>
               <div className="font-serif text-xl mb-2">Sentiment analysis</div>
               <div className="font-sans mb-5">
@@ -43,11 +41,11 @@ const TheGreatOutdoors = () => {
               <div className="font-sans mb-2">of welke merken vaak samen worden beoordeeld. Dit kan nuttig zijn voor het doen van suggesties voor gerelateerde producten op basis van frequente combinaties.</div>
             </div>
           </div>
-      </div>
+        </div>
         <div className="w-full md:w-4/12 p-4">
           <Sidebar/>
         </div>
-    </div>
+      </div>
     </div>
   );
 };
