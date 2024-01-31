@@ -23,9 +23,9 @@ const Homepage = () => {
                 <div className='mb-5'>Het begin van mijn onderwijsreis vond plaats op Stanislas in de mavo. Na mijn tijd op de mavo maakte ik de overstap naar de havo, waar ik mijn academische horizon verder verbreedde. Mijn studiepad bracht me uiteindelijk naar de Haagse Hogeschool, waar ik aanvankelijk HBO Rechten studeerde. Na een zorgvuldige afweging besloot ik echter dat deze richting niet volledig aan mijn verwachtingen voldeed. Daarom maakte ik de overstap naar HBO ICT, waar mijn passie en interesse beter tot hun recht kwamen. Deze beslissing heeft mijn onderwijsreis verrijkt en mijn pad geleid naar een vakgebied dat beter aansluit bij mijn persoonlijke en professionele doelen.</div>
               </div>
 
-            <div>
-              <div className="font-serif text-lg mx-5">Gym</div>
-              <div className='mb-5 mx-5'> Sporten is voor mij niet alleen een fysieke activiteit, maar een essentieel onderdeel van mijn levensstijl en welzijn. Er zijn talloze redenen waarom ik sporten als iets belangrijks beschouw, en het gaat verder dan alleen het streven naar een gezond lichaam. Allereerst ervaar ik sporten als een krachtig middel om stress te verminderen en mijn mentale gezondheid te verbeteren. Tijdens het sporten kan ik mijn gedachten loslaten en me concentreren op het moment, wat resulteert in een gevoel van ontspanning en helderheid. Het helpt me om spanningen kwijt te raken en even te ontsnappen aan de dagelijkse beslommeringen.</div>
+              <div>
+              <div className="font-serif text-lg">Gym</div>
+              <div className='mb-5'>Sporten is voor mij niet alleen een fysieke activiteit, maar een essentieel onderdeel van mijn levensstijl en welzijn. Er zijn talloze redenen waarom ik sporten als iets belangrijks beschouw, en het gaat verder dan alleen het streven naar een gezond lichaam. Allereerst ervaar ik sporten als een krachtig middel om stress te verminderen en mijn mentale gezondheid te verbeteren. Tijdens het sporten kan ik mijn gedachten loslaten en me concentreren op het moment, wat resulteert in een gevoel van ontspanning en helderheid. Het helpt me om spanningen kwijt te raken en even te ontsnappen aan de dagelijkse beslommeringen.</div>
             </div>
           </div>
 
