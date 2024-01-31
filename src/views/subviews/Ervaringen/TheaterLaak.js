@@ -11,17 +11,19 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Homepage = () => {
   return (
-    <div className="">
-      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
+    <div>
+      <div className="flex flex-col items-center text-2xl font-serif mb-5 bg-[#f4f4f4] p-3"> 
         <a href="https://github.com/VincentHuijer/WDPR" className="text-2xl font-serif text-black hover:underline"> <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Theater Laak</a>
       </div>
+
+
       <div>
-        <div className='flex justify-center'>
-        <div className='w-5/12 ml-48 mr-24'>
+        <div className='flex flex-col justify-center md:flex-row'>
+          <div className='w-3/4 mx-12 md:w-5/12 md:ml-48 md:mr-24'>
             <div>
               <img src={FrontPageTheaterLaak} alt="FrontPageTheaterLaak" className="" />
             </div>
-            <div className="pl-64 text-sm mb-5 mr-5">Theater laak frontpage</div>
+            <div className="ml-12 md-ml-64 text-sm mb-5 mr-5">Theater laak frontpage</div>
 
             <div className="font-sans mb-20">
               Theater Laak is een fictief bedrijf dat behoefte heeft aan een nieuwe website voor het theater. In het kader van deze opdracht ben ik samen met een groep medestudenten aan de slag gegaan om deze website te ontwikkelen. Tijdens het project moesten we creatieve oplossingen bedenken voor het omzetten van specifieke gegevens in code en het effectief verdelen van verantwoordelijkheden. Het lijkt misschien eenvoudig om een reservering te maken voor een voorstelling, maar hierbij moeten we rekening houden met het feit dat je eigenlijk een stoel koopt voor een bepaalde zaal en voor een specifieke show van een voorstelling. Bovendien moeten alle beschikbare shows overzichtelijk worden weergegeven in een kalender voor gebruikers. Klanten moeten in staat zijn om stoelen in een zaal te bestellen aan de hand van een specifieke opstelling.

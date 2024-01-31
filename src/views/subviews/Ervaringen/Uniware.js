@@ -14,12 +14,10 @@ import Sidebar from '../../../components/Sidebar';
 const Homepage = () => {
   return (
     <div className="">
-      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
-        <div className="text-black text-2xl font-serif">Uniware</div>
-      </div>
+      <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 text-2xl font-serif">Uniware</div>
       <div>
-        <div className='flex justify-center'>
-          <div className='w-5/12 ml-48 mr-24'>
+        <div className='flex flex-col justify-center md:flex-row'>
+          <div className='w-3/4 mx-12 md:w-5/12 md:ml-48 md:mr-24'>
             <div>
               <Carousel
                 className="rounded-xl"
@@ -82,8 +80,8 @@ const Homepage = () => {
                 <img src={SprintKlein} alt="Sprintplanner" className="h-full w-full object-cover"/>
               </Carousel>
             </div>
-            <div className="pl-64 text-sm mb-5">Uniware overzichten</div>
-            <div>
+            <div className="ml-5 md:ml-24 text-sm mb-5">Uniware overzichten</div>
+            <div className='mb-5'>
               De doelstelling van de opdracht is het realiseren van een interactieve web-interface met een scrum-board view, waarin de status, prioriteit en tijdregistratie van actiepunten snel en eenvoudig kunnen worden bijgewerkt. Dit stelt Uniware in staat om de tijdregistratie duidelijk te delen en de voortgang van taken en kosten in tijd transparant weer te geven. Hierdoor kan de organisatie efficiëntere processen realiseren en het probleem van het delen van actiepunten met medewerkers en klanten oplossen.
             </div>
             <GenericArticle
