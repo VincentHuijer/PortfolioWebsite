@@ -1,10 +1,10 @@
 import React from 'react';
 import Sidebar from '../../../components/Sidebar';
-import GreenbitReisToevoegen from '../../../media/Betabit/GreenbitReisToevoegen.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
+import GreenbitReisToevoegen from '../../../media/Betabit/GreenbitReisToevoegen.png';
 
-const Betabit = () => {
+const Homepage = () => {
   return (
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7">
@@ -31,5 +31,4 @@ const Betabit = () => {
   );
 };
 
-
-export default Betabit;
+export default Homepage;

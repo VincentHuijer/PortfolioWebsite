@@ -45,9 +45,9 @@ const Portfolio = () => {
               linkText={'+ LEES MEER'}
             />
         </div>
-        <div className="w-4/12 p-4">
-          <Sidebar/>
-        </div>
+          <div className="w-4/12 p-4 mr-36">
+            <Sidebar/>
+          </div>
         </div>
       </div>
     </div>

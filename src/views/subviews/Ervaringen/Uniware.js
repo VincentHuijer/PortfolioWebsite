@@ -11,7 +11,7 @@ import GenericArticle from '../../../components/GenericArticle';
 import { Carousel, IconButton  } from "@material-tailwind/react";
 import Sidebar from '../../../components/Sidebar';
 
-const Uniware = () => {
+const Homepage = () => {
   return (
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex items-center justify-center mb-7 text-2xl font-serif">Uniware</div>
@@ -95,26 +95,13 @@ const Uniware = () => {
               text="FullCalendar is een populaire open-source JavaScript-bibliotheek die wordt gebruikt voor het creëren van interactieve en aanpasbare kalenderinterfaces op websites. Ik heb voor deze library gekozen, omdat het veel opties bied in de vorm van overzichten, wijzigingen van de layout en functionaliteiten die de tijdregistratie sneller maken, zoals het slepen van de actiepunten direct naar de kalender, het makkelijk bewerken van evenementen door ze te slepen of te trekken om korter of langer te maken."
             />
           </div>
-          <div>
-            <div>De doelstelling van de opdracht is het realiseren van een interactieve web-interface met een scrum-board view, waarin de status, prioriteit en tijdregistratie van actiepunten snel en eenvoudig kunnen worden bijgewerkt. Dit stelt Uniware in staat om de tijdregistratie duidelijk te delen en de voortgang van taken en kosten in tijd transparant weer te geven. Hierdoor kan de organisatie efficiëntere processen realiseren en het probleem van het delen van actiepunten met medewerkers en klanten oplossen.</div>
+          <div className="w-4/12 p-4 mr-36">
+            <Sidebar/>
           </div>
-          <GenericArticle
-            imageSrc={VueLogo}
-            title="Vue.js"
-            text="Ik ben voor het grootste gedeelte tijdens mijn stageopdracht bezig geweest met het Javascript-framework Vue.js. Ik heb Vue gebruikt voor het bouwen van de frontend van mijn opdracht, het implementeren van generieke componenten die ik op diverse plekken kan gebruiken en het uitvoeren van API calls voor de tijdregistratie, actiepunten en de sprintplanner."
-          />
-          <GenericArticle
-            imageSrc={FullCalendarLogo}
-            title="FullCalendar library"
-            text="FullCalendar is een populaire open-source JavaScript-bibliotheek die wordt gebruikt voor het creëren van interactieve en aanpasbare kalenderinterfaces op websites. Ik heb voor deze library gekozen, omdat het veel opties biedt in de vorm van overzichten, wijzigingen van de layout en functionaliteiten die de tijdregistratie sneller maken, zoals het slepen van de actiepunten direct naar de kalender, het makkelijk bewerken van evenementen door ze te slepen of te trekken om korter of langer te maken."
-          />
-        </div>
-        <div className="w-4/12 p-4 ">
-          <Sidebar/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Uniware;
+export default Homepage;

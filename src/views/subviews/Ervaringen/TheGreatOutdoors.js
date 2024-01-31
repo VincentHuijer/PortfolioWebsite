@@ -3,7 +3,7 @@ import Sidebar from '../../../components/Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
 
-const TheGreatOutdoors = () => {
+const Homepage = () => {
   return (
     <div className="">
       <div className="bg-[#f4f4f4] p-3 flex flex-row items-center justify-center mb-7">
@@ -41,13 +41,13 @@ const TheGreatOutdoors = () => {
               <div className="font-sans mb-2">of welke merken vaak samen worden beoordeeld. Dit kan nuttig zijn voor het doen van suggesties voor gerelateerde producten op basis van frequente combinaties.</div>
             </div>
           </div>
-        </div>
-        <div className="w-full md:w-4/12 p-4">
-          <Sidebar/>
+          <div className="w-4/12 p-4 mr-36">
+            <Sidebar/>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default TheGreatOutdoors;
+export default Homepage;
