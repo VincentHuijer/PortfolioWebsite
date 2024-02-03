@@ -2,17 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import { faM } from '@fortawesome/free-solid-svg-icons';
-import Theaterlaak from './subviews/Ervaringen/TheaterLaak.js'
-import Uniware from './subviews/Ervaringen/Uniware'
-import Betabit from './subviews/Ervaringen/Betabit'
-import TheGreatOutdoors from './subviews/Ervaringen//TheGreatOutdoors'
 import { Link } from 'react-router-dom';
 
 const Profiel = () => {
   return (
     <div className="bg-[#1D1D20]">
       <div className='flex flex-col items-end mr-64'>
-
         <div className='hidden md:block text-[#777777] ml-auto'>
           <FontAwesomeIcon icon={faM} size="2x" className='mr-2'/>
           <FontAwesomeIcon icon={faGithub} size="2x" className='mr-2'/>
@@ -43,29 +38,32 @@ const Profiel = () => {
               <div className='relative mb-4'>
                 <div className='absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#87378D] to-[#877E4C]'></div>
                 <Link to="/Uniware" className='flex-grow whitespace-nowrap'>
-                Uniware
-              </Link>
-              </div>
-              <div className='relative mb-4'>
-                <div className='absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#87378D] to-[#877E4C]'></div>
-                <Link to="/TheaterLaak" className='flex-grow whitespace-nowrap'>
-                Theater Laak
+                  Uniware
                 </Link>
               </div>
               <div className='relative mb-4'>
                 <div className='absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#87378D] to-[#877E4C]'></div>
-                Betabit
+                <Link to="/TheaterLaak" className='flex-grow whitespace-nowrap'>
+                  Theater Laak
+                </Link>
+              </div>
+              <div className='relative mb-4'>
+                <div className='absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#87378D] to-[#877E4C]'></div>
+                <Link to="/Betabit" className='flex-grow whitespace-nowrap'>
+                  Betabit
+                </Link>
               </div>
               <div className='relative'>
                 <div className='absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#87378D] to-[#877E4C]'></div>
-                The Great Outdoors
+                <Link to="/TheGreatOutdoors" className='flex-grow whitespace-nowrap'>
+                  The Great Outdoors
+                </Link>
               </div>
             </div>
-            {/* <div className='absolute top-0 left-0 bottom-0 w-1 bg-gradient-to-b from-[#87378D] to-[#877E4C]'></div> */}
-            </div>
-</div>
+          </div>
         </div>
       </div>
+    </div>
   );
 };
 
