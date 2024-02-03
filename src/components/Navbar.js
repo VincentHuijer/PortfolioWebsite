@@ -2,6 +2,7 @@ import ContactModal from '../components/ContactModal';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isContactModalOpen, setContactModalOpen] = useState(false);
@@ -12,11 +13,11 @@ const Navbar = () => {
     <nav className="bg-[#E2E2E2] p-3">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <a href="/" className="text-black text-lg font-serif">Vincent Huijer</a>
+          <Link to="/" className="text-black text-lg font-serif">Vincent Huijer</Link>
           <div className="flex space-x-4">
-            <a href="/" className="text-black text-lg font-serif">Home</a>
-            {/* <a href="/profiel" className="text-black text-sm font-serif">Profiel</a> */}
-            <a href="/Portfolio" className="text-black text-lg font-serif">Portfolio</a>
+            <Link to="/" className="text-black text-lg font-serif">Home</Link>
+            {/* <Link to="/profiel" className="text-black text-sm font-serif">Profiel</Link> */}
+            <Link to="/Portfolio" className="text-black text-lg font-serif">Portfolio</Link>
             <button className='text-black text-lg font-serif' onClick={openContactModal}>Contact</button>
             <ContactModal
               isOpen={isContactModalOpen}
