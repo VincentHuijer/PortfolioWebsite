@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SearchBar from "./Searchbar";
 
 const Sidebar = () => {
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    (async function () {
+      const { text } = await( await fetch(`/api/message`)).json();
+      setData(text);
+    })();
+  });
+
   return (
     <div className="hidden md:block">
       <div className=" bg-[#F7F7F7] p-6 mb-7">
@@ -39,12 +48,13 @@ const Sidebar = () => {
 
       <div className="bg-[#F7F7F7] p-6 mb-7">
         <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Boekenlijst</div>
-        <div>Meditations, Marcus Aurelius </div>
+        {data}
+        {/* <div>Meditations, Marcus Aurelius </div>
         <div>The Way of the Superior Man, David Deida</div>
         <div>On the Shortness of Life, Lucius Annaeus Seneca</div>
         <div>Letters from a stoic, Lucius Annaeus Seneca</div>
         <div>Ego Is the Enemy, Ryan Holiday</div>
-        <div>How to win friends & influence people, Dale Carnegie</div>
+        <div>How to win friends & influence people, Dale Carnegie</div> */}
       </div>
     </div>
   )
