@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SearchBar from "./Searchbar";
+import GetBooks from "../api/message";
 
 const Sidebar = () => {
   const [data, setData] = useState('');
@@ -48,13 +49,7 @@ const Sidebar = () => {
 
       <div className="bg-[#F7F7F7] p-6 mb-7">
         <div className='font-serif text-lg border-b-2 border-black mb-2 pb-1'> Boekenlijst</div>
-        {data}
-        {/* <div>Meditations, Marcus Aurelius </div>
-        <div>The Way of the Superior Man, David Deida</div>
-        <div>On the Shortness of Life, Lucius Annaeus Seneca</div>
-        <div>Letters from a stoic, Lucius Annaeus Seneca</div>
-        <div>Ego Is the Enemy, Ryan Holiday</div>
-        <div>How to win friends & influence people, Dale Carnegie</div> */}
+        <GetBooks/>
       </div>
     </div>
   )
