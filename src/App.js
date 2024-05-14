@@ -11,6 +11,7 @@ import Theaterlaak from './views/subviews/Ervaringen/TheaterLaak'
 import Uniware from './views/subviews/Ervaringen/Uniware'
 import Betabit from './views/subviews/Ervaringen/Betabit'
 import TheGreatOutdoors from './views/subviews/Ervaringen/TheGreatOutdoors'
+import Reacties from './views/Reacties';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/profiel" element={<Profiel />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/Reacties" element={<Reacties />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/theaterLaak" element={<Theaterlaak />} />

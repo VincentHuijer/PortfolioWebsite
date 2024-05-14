@@ -18,6 +18,7 @@ const Navbar = () => {
             <Link to="/" className="text-black text-lg font-serif">Home</Link>
             {/* <Link to="/profiel" className="text-black text-sm font-serif">Profiel</Link> */}
             <Link to="/Portfolio" className="text-black text-lg font-serif">Portfolio</Link>
+            <Link to="/Reacties" className="text-black text-lg font-serif">Reacties</Link>
             <button className='text-black text-lg font-serif' onClick={openContactModal}>Contact</button>
             <ContactModal
               isOpen={isContactModalOpen}
