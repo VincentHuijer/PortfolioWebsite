@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import GenericArticle from "../components/GenericArticle";
-import VueLogo from '../media/Logos/VueLogo.png' 
+import GenericArticle from "../../components/GenericArticle";
+import GenericComment from "./GenericComment";
 
 const BASE_URL = 'https://localhost:7116/api/Comments';
 
@@ -34,8 +34,9 @@ export default function GetComments() {
         <div>
             <ul>
                 {posts.map((post) => (
-                  <GenericArticle
+                  <GenericComment
                     key={post.id}
+                    id={post.id}
                     imageSrc={post.imageUrl}
                     title={`${post.title}, - ${post.firstName} ${post.lastName}`}
                     text={post.message}

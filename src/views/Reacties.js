@@ -1,11 +1,13 @@
-import GetComments from "../api/Comments"
+import DeleteComments from "../api/Comments/DeleteComment"
+import GetComments from "../api/Comments/GetComments"
+import PostComment from "../api/Comments/PostComment"
 import GenericArticle from "../components/GenericArticle"
-import VueLogo from '../media/Logos/VueLogo.png' 
 const Reacties = () => {
 
   return (
     <div>
-       <GetComments/>
+      <GetComments/>
+      <PostComment/>
     </div>
   )
 }
