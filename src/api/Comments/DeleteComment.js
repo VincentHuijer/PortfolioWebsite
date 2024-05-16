@@ -30,7 +30,7 @@ export default function DeleteComment({id}) {
 
 
     return (
-        <div>
+        <div className="mr-2">
           <button onClick={() => handleDelete(id)}>Delete</button>
         </div>
     );

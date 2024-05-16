@@ -24,7 +24,8 @@ const DisplayComments = () => {
                         id={post.id}
                         imageSrc={post.imageUrl}
                         title={`${post.title}, - ${post.firstName} ${post.lastName}`}
-                        text={post.message}
+                        message={post.message}
+                        postObject={post}
                     />
                 ))}
             </ul>

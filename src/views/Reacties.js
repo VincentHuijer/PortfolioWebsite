@@ -6,9 +6,12 @@ import GenericArticle from "../components/GenericArticle"
 const Reacties = () => {
 
   return (
-    <div>
-      <DisplayComments/>
-      <PostComment/>
+  
+    <div className="w-4/6 mx-auto">
+      <div className="mt-2">
+        <DisplayComments/>
+        <PostComment/>
+      </div>
     </div>
   )
 }
