@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import GenericArticle from "../../components/GenericArticle";
-import GenericComment from "./GenericComment";
 
 const BASE_URL = 'https://localhost:7116/api/Comments';
 
@@ -9,40 +7,22 @@ export default function GetComments() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(BASE_URL)
-            .then(response => {
-                if (!response.ok) {
-                    console.log('response:', response)
-                    throw new Error('Failed to fetch data');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setPosts(data); 
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-                setError(error.message); 
-            });
-    }, []); // Empty dependency array ensures the effect runs only once when component mounts
+        fetchComments();
+    }, []);
 
-    if (error) {
-        return <div>Comments can't be fetched {error}</div>; 
-    }
+    const fetchComments = async () => {
+        try {
+            const response = await fetch(BASE_URL);
+            if (!response.ok) {
+                throw new Error('Failed to fetch data');
+            }
+            const data = await response.json();
+            setPosts(data); 
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            setError(error.message); 
+        }
+    };
 
-    return (
-        <div>
-            <ul>
-                {posts.map((post) => (
-                  <GenericComment
-                    key={post.id}
-                    id={post.id}
-                    imageSrc={post.imageUrl}
-                    title={`${post.title}, - ${post.firstName} ${post.lastName}`}
-                    text={post.message}
-                  />
-                ))}
-            </ul>
-        </div>
-    );
+    return { posts, error };
 }

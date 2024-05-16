@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GetComments from "./GetComments";
 
 const BASE_URL = 'https://localhost:7116/api/Comment';
 
@@ -36,7 +37,7 @@ export default function PostComment() {
             }
             return response.json();
         })
-        .then(data => {
+        .then(() => {
             setError(null);
             setTitle('');
             setFirstName('');
@@ -44,7 +45,7 @@ export default function PostComment() {
             setEmail('');
             setMessage('');
             setImageUrl('');
-        })
+      })
     };
 
     return (
@@ -76,7 +77,6 @@ export default function PostComment() {
                 </div>
                 <button type="submit">Post Comment</button>
             </form>
-            {error && <div style={{color: 'red'}}>{error}</div>}
         </div>
     );
 }
