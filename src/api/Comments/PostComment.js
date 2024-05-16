@@ -10,7 +10,6 @@ export default function PostComment() {
     const [message, setMessage] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const [error, setError] = useState(null);
-    const [success, setSuccess] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -38,9 +37,7 @@ export default function PostComment() {
             return response.json();
         })
         .then(data => {
-            setSuccess('Comment posted successfully!');
             setError(null);
-            // Reset form fields
             setTitle('');
             setFirstName('');
             setLastName('');
@@ -48,10 +45,6 @@ export default function PostComment() {
             setMessage('');
             setImageUrl('');
         })
-        .catch(error => {
-            setError('Error posting comment: ' + error.message);
-            setSuccess(null);
-        });
     };
 
     return (
@@ -84,7 +77,6 @@ export default function PostComment() {
                 <button type="submit">Post Comment</button>
             </form>
             {error && <div style={{color: 'red'}}>{error}</div>}
-            {success && <div style={{color: 'green'}}>{success}</div>}
         </div>
     );
 }

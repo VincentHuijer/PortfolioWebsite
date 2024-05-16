@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 
-const BASE_URL = 'https://localhost:7116/api/comment';
+const BASE_URL = 'https://localhost:7116/api/Comment';
 
 export default function DeleteComment({id}) {
-    const [posts, setPosts] = useState([]);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
 
