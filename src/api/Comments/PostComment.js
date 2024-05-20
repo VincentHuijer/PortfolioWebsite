@@ -59,7 +59,7 @@ const CommentForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg">
             <div className="mb-4">
                 <label className="block text-gray-700 mb-2">Title:</label>
                 <input 
