@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Homepage from './views/Homepage';
 import Portfolio from './views/Portfolio';
@@ -15,7 +15,7 @@ import Reacties from './views/Reacties';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
         <Navbar />
         <Routes>
@@ -31,7 +31,7 @@ function App() {
           <Route path="/TheGreatOutdoors" element={<TheGreatOutdoors />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
